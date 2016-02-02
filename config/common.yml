@@ -1,0 +1,30 @@
+# This file contains COMMON config values that are shared across all environments
+# ------------------------------------------------------------------------------------
+
+json_schema: 'data/json_schema'
+
+# Currently not used >
+proxy_url: '127.0.0.1'
+proxy_port: 28080
+rest_timeout: 60
+# < Currently not used
+
+
+webpage_client:
+  default_client: browser
+  base_url: http://localhost:8080/
+  selenium:
+    browser: firefox
+  phantom:
+  headless:
+
+screen_names:
+  Home Page: /
+
+element_ids:
+    home_header: input-nino
+    copyright: set-interest-hd
+    home_button: set-interest-form
+
+messages:
+    copyright: 'Copyright © 2015 Hiklas Ltd'

@@ -1,0 +1,4 @@
+
+webpage_client:
+  default_client: browser
+  base_url: http://test.hiklas.co.uk

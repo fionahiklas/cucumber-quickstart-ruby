@@ -1,0 +1,8 @@
+# ===========================================================================================================
+# TO EASE READABILITY AND ENSURE CONSISTENCY, PLEASE TAKE CARE TO MAINTAIN THE ALPHABETIC ORDER AND SPACING.
+# ===========================================================================================================
+<% default_options = " --tags ~CI --tags ~@in_progress --tags ~@known_defect --tags ~@defunct --tags ~@future_release --tags ~@manual -f pretty --format html --out results.html" %>
+
+<% common_regression = "features #{default_options}" %>
+
+all_jobs:  --tags @smoke_test,~@manual -f pretty --format html --out results.html
