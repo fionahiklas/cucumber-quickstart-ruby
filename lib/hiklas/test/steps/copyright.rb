@@ -26,7 +26,7 @@ module Hiklas
         #
         module Copyright
 
-          include Fiona::Utils::Lumber::LumberJack
+          include Hiklas::Utils::Lumber::LumberJack
           include Hiklas::Test::Clients::WebpageClientManagerConstants
 
           @@lumber = lumber(self.name)

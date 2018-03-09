@@ -38,7 +38,7 @@ module Hiklas
       #
       class WebpageClient
 
-        include Hiklas::Lumber::LumberJack
+        include Hiklas::Utils::Lumber::LumberJack
         include Hiklas::Test::Clients::WebpageClientConstants
 
         @@lumber = lumber(self.name)

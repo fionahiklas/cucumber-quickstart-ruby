@@ -16,7 +16,7 @@ Cucumber::Rake::Task.new(:debug) do |t|
 end
 
 
-Rake::TestTask.new(:testnew) do |t|
+Rake::TestTask.new(:test) do |t|
   t.libs << "test"
   t.libs << "lib"
   t.pattern = 'test/**/test_*.rb'

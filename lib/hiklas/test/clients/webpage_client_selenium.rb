@@ -1,4 +1,4 @@
-require 'hiklas/util/lumber'
+require 'hiklas/utils/lumber'
 require 'hiklas/config/config_world'
 require 'hiklas/test/clients/webpage_client'
 require 'selenium-webdriver'
@@ -11,12 +11,11 @@ module Hiklas
 
       ##
       #
-
       #
       #
       class WebpageClientSelenium < WebpageClient
 
-        include Hiklas::Lumber::LumberJack
+        include Hiklas::Utils::Lumber::LumberJack
         include Hiklas::Config::ConfigWorld
 
         @@lumber = lumber(self.name)

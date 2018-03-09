@@ -1,4 +1,4 @@
-require 'hiklas/utils'
+require 'hiklas/utils/lumber'
 require 'hiklas/test/clients/webpage_client_manager'
 
 module Hiklas

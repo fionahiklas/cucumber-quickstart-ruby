@@ -22,10 +22,10 @@ $LOAD_PATH.unshift File.expand_path("../../../lib", __FILE__)
 
 puts "Cucumber LOADPATH = #{$LOAD_PATH}"
 
-require 'hiklas/lumber'
+require 'hiklas/utils/lumber'
 
 # Change this to alter the logging levels
-Hiklas::Lumber::LumberJack::lumber_level(Hiklas::Lumber::Constants::DEBUG)
+Hiklas::Utils::Lumber::LumberJack::lumber_level(Hiklas::Utils::Lumber::Constants::DEBUG)
 
 require 'hiklas/config/config_world'
 
