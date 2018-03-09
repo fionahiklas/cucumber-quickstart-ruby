@@ -8,6 +8,7 @@ gem 'nokogiri'
 gem 'jsonschema'
 gem 'capybara'
 gem 'selenium-webdriver'
+gem 'test-unit'
 
 
 

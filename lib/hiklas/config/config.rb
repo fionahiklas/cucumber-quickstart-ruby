@@ -1,6 +1,6 @@
 require 'yaml'
 
-require 'hiklas/util/lumber'
+require 'hiklas/utils/lumber'
 
 module Hiklas
 
@@ -19,7 +19,7 @@ module Hiklas
     #
     class Config
 
-      include Hiklas::Lumber::LumberJack
+      include Hiklas::Utils::Lumber::LumberJack
 
       @@log = lumber(self.name)
 

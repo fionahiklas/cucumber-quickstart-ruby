@@ -199,26 +199,26 @@ module Hiklas
         #
         module ClassMethods
           def lumber(name=DEFAULT_LUMBER)
-            Hiklas::Lumber::LumberLogs::get_lumber(name)
+            Hiklas::Utils::Lumber::LumberLogs::get_lumber(name)
           end
         end
 
 
         def self.lumber_level(level)
-          Hiklas::Lumber::LumberLogs::set_level(level)
+          Hiklas::Utils::Lumber::LumberLogs::set_level(level)
         end
 
 
         def self.lumber_out(out)
-          Hiklas::Lumber::LumberLogs::set_output(out)
+          Hiklas::Utils::Lumber::LumberLogs::set_output(out)
         end
 
         def self.pp_on(thingToPP)
-          Hiklas::Lumber::LumberLogs::pretty_print_on(thingToPP)
+          Hiklas::Utils::Lumber::LumberLogs::pretty_print_on(thingToPP)
         end
 
         def self.pp_off(thingToPP)
-          Hiklas::Lumber::LumberLogs::pretty_print_off(thingToPP)
+          Hiklas::Utils::Lumber::LumberLogs::pretty_print_off(thingToPP)
         end
 
         ##
@@ -228,6 +228,7 @@ module Hiklas
         # When this module is included into a class this method is called with a reference to the Class
         # instance and then extend method (which actually comes from Object) adds the methods from the
         # module above (ClassMethods) into that instance.
+        #
         def self.included(base)
           base.extend ClassMethods
         end
