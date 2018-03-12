@@ -89,18 +89,21 @@ module Hiklas
         end
 
         def i_am_on_screen(screenName)
+          url_for_screen_name = get_url_from_screen_name(screenName)
+          expect(url_for_screen_name != nil)
+
           # TODO: Really it would be better to be explicit about which client we are using
           # TODO: maybe this best with a step that states which client or a config value.
           # TODO: For now we are just going to use a default client from the config UNLESS
           # TODO: a step has already setup the client - this is on a per test basis
           @webpage_client ||= choose_webpage_client(default_webpage_client)
-
-          @webpage_client.goto_page_relative(get_url_from_screen_name(screenName))
+          @webpage_client.goto_page_relative(url_for_screen_name)
         end
 
-        def get_url_from_screen_name(name)
+        def get_url_from_screen_name(screenName)
+          @@lumber.debug("Get URL for name '%s'", screenName)
           # The config object is available in the World object
-          config[SCREEN_MAPPING][name]
+          config[SCREEN_MAPPING][screenName]
         end
 
       end # General

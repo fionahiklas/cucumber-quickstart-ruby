@@ -145,11 +145,11 @@ module Hiklas
         end
 
         def make_absolute_url(relative_url)
-          @@lumber.debug("Assumebling absolute URL: protocol '%s', base '%s', relative url '%s'",
+          @@lumber.debug("Assembling absolute URL: protocol '%s', base '%s', relative url '%s'",
                          http_protocol,
                          base_url,
                          relative_url)
-          separator_slash = (relative_url[0]=='/') ? '' : '/'
+          separator_slash = (relative_url != nil && relative_url[0]=='/') ? '' : '/'
           http_protocol + '://' + base_url + separator_slash + relative_url
         end
 

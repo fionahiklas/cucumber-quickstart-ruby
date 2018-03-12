@@ -4,7 +4,6 @@ require 'hiklas/test/steps/general'
 World(Hiklas::Test::Steps::General)
 
 
-
 Given (/^I connect with a (browser|headless client|phantom client)$/) do |client|
   @webpage_client = choose_webpage_client(client)
 end

@@ -20,6 +20,7 @@ webpage_client:
 
 screen_names:
   Home Page: /
+  Copyright: /copyright
 
 element_ids:
     home_header: input-nino

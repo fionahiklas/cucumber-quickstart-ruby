@@ -4,7 +4,7 @@ require 'hiklas/test/steps/copyright'
 World(Hiklas::Test::Steps::Copyright)
 
 
-When (/^I enter a ([\w]+) and Search$/) do |nino|
-  search_for_nino(nino)
+When (/^I enter a ([\w]+) and Search$/) do |searchValue|
+  search_for(searchValue)
 end
 
