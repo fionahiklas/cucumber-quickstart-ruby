@@ -1,4 +1,7 @@
 
 webpage_client:
   default_client: browser
-  base_url: http://production.hiklas.co.uk
+  base_url: http://www.hiklas.com
+
+  selenium:
+    browser: safari
