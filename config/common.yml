@@ -12,7 +12,7 @@ rest_timeout: 60
 
 webpage_client:
   default_client: browser
-  base_url: http://localhost:8080/
+  base_url: localhost:8080
   selenium:
     browser: firefox
   phantom:
@@ -23,9 +23,8 @@ screen_names:
   Copyright: /copyright
 
 element_ids:
-    home_header: input-nino
-    copyright: set-interest-hd
-    home_button: set-interest-form
+    copyright: copyright-year
+    home_button: home-button
 
 messages:
     copyright: 'Copyright © 2015 Hiklas Ltd'

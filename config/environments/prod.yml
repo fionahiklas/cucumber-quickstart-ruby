@@ -1,7 +1,7 @@
 
 webpage_client:
   default_client: browser
-  base_url: http://www.hiklas.com
+  base_url: www.hiklas.com
 
   selenium:
     browser: safari
